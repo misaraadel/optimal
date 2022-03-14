@@ -1,0 +1,144 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    .button-contain .button-shape {
+      display: none !important;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      height: 100vh;
+      top: 100px;
+      right: -100%;
+      position: absolute;
+      background: linear-gradient(90deg, #00466A, #008BD2);
+      flex-direction: column !important;
+      justify-content: flex-start;
+      transition: all .2s linear;
+      padding-top: 20px;
+
+      &.acitve-nav {
+        right: 0;
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    &.scrolled { 
+      .navbar-nav {
+        top: 90px !important;
+      }
+    }
+  }
+
+  header {
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+
+    h4, span {
+      font-size: 21px !important;
+      text-align: justify;
+    }
+
+    span {
+      color: var(--primary) !important;
+    }
+
+    p {
+      text-align: justify !important;
+    }
+  }
+
+  footer {
+    .footer-nav {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      justify-content: flex-start !important;
+
+      &::-webkit-scrollbar {
+        width: 0px !important;
+      }
+
+      &::-webkit-scrollbar-track,  &::-webkit-scrollbar-thumb {
+        background-color: transparent !important;
+
+      }
+
+      li {
+        min-width: 150px;
+        text-align: center;
+      }
+    }
+
+    .btn-contain {
+      flex-wrap: wrap !important;
+  
+      a img {
+        margin-top: 10px !important;
+        width: 162px !important;
+      }
+    }
+  
+    .copyrigts {
+      flex-direction: column;
+      justify-content: center;
+  
+      p {
+        margin-bottom: 24px !important;
+      }
+    }
+  }
+
+  .contact-us {
+    .content {
+      padding: 70px 20px !important;
+
+      .form-box {
+        padding: 50px 10px !important;
+      }
+    }
+  }
+
+  .about-us {
+    padding-top: 50px !important;
+    .box {
+      padding: 20px 10px !important;
+    }
+
+    .content {
+      h4{
+        font-size: 22px !important;
+        text-align: justify !important;
+      }
+    }
+  }
+  
+
+  .products .box {
+    margin-bottom: 35px !important;
+  }
+
+  .features .box .content {
+    padding: 50px 10px;
+  }
+
+  .order-mobile-1 {
+    order: 1 !important;
+  }
+
+  .order-mobile-0 {
+    order: 0 !important; 
+  }
+
+  .features .feature-content h4 {
+    font-size: 20px !important;
+    text-align: justify !important;
+  }
+}
